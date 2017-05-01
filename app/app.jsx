@@ -6,6 +6,11 @@ var Nav = require('Nav');
 var Weather = require('Weather');
 var About = require('About');
 var Examples = require('Examples');
+var Foundation = require('Foundation');
+// Load Foundation 
+require('style!css!foundation-sites/dist/foundation.min.css')
+
+//$(document).foundation();
 
 ReactDOM.render(
 	<Router history={hashHistory}>
@@ -15,5 +20,5 @@ ReactDOM.render(
 			<IndexRoute component={Weather}/>
 		</Router>
 	</Router>,
-    document.getElementById('app') 
+    document.getElementById('app')
 );

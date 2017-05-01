@@ -3,31 +3,19 @@ var express = require('express');
 // create our app
 var app = express();
 
-app.use(express.static('public'));
+const PORT = process.env.PORT || 3000;
 
-app.listen(3000, function() {
-    console.log('Express server is up on port 3000');
+app.use(function (req, res, next){
+	if(req.header['x-forwarded-proto'] === 'https'){
+		res.redirect('http://' + req.hostname + req.url);
+	}else{
+		next();
+	}
 });
 
+app.use(express.static('public'));
 
-// var express = require('express');
-
-// // create our app
-// var app = express();
-
-// const PORT = process.env.PORT || 3000;
-
-// app.use(function (req, res, next){
-// 	if(req.header['x-forwarded-proto'] === 'http'){
-// 		next();
-// 	}else{
-// 		res.redirect('http://' + req.hostname + req.url);
-// 	}
-// });
-
-// app.use(express.static('public'));
-
-// app.listen(PORT, function() {
-//     console.log('Express server is up on port '+PORT);
-// });
+app.listen(PORT, function() {
+    console.log('Express server is up on port '+PORT);
+});
 

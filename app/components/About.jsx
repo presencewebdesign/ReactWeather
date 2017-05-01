@@ -11,7 +11,8 @@ var React = require('react');
 //Refactoring
 var About = (props) => {
 	return(
-		<h3>About Component</h3>
+		<h3>About</h3>
+		<p>Welcome to teh about page</p>
 	);
 }
 module.exports = About;

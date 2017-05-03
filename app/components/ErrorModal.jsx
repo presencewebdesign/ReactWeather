@@ -1,5 +1,5 @@
 var React = require('react');
-
+var $ = require('jquery');
 var ErrorModal = React.createClass({
 
 	getDefaultProps: function(){

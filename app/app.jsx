@@ -6,7 +6,6 @@ var Nav = require('Nav');
 var Weather = require('Weather');
 var About = require('About');
 var Examples = require('Examples');
-var $ = require('jquery');
 
 // Load Foundation 
 require('style!css!foundation-sites/dist/foundation.min.css')

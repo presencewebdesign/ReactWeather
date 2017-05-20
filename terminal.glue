@@ -1,1 +1,10 @@
+█ [ C:\xampp\htdocs\reactWeather ] webpack
+Hash: 535ac2eae9f276dfd79f
+Version: webpack 1.15.0
+Time: 3627ms
+             Asset     Size  Chunks             Chunk Names
+./public/bundle.js  3.13 MB       0  [emitted]  main
+   [0] multi main 52 bytes {0} [built]
+    + 266 hidden modules
+
  

@@ -1,1 +1,27 @@
+█ [ C:\xampp\htdocs\reactWeather ] webpack
+Hash: 4ad7b4d17837f91ee8ff
+Version: webpack 1.15.0
+Time: 3100ms
+             Asset     Size  Chunks             Chunk Names
+./public/bundle.js  3.12 MB       0  [emitted]  main
+   [0] multi main 52 bytes {0} [built]
+    + 264 hidden modules
+
+ERROR in ./app/app.jsx
+Module not found: Error: Cannot resolve module 'app/styles/app.css' in C:\xampp\htdocs\reactWeather\app
+ @ ./app/app.jsx 24:0-38
+
+█ [ C:\xampp\htdocs\reactWeather ] webpack
+Hash: 4ad7b4d17837f91ee8ff
+Version: webpack 1.15.0
+Time: 3309ms
+             Asset     Size  Chunks             Chunk Names
+./public/bundle.js  3.12 MB       0  [emitted]  main
+   [0] multi main 52 bytes {0} [built]
+    + 264 hidden modules
+
+ERROR in ./app/app.jsx
+Module not found: Error: Cannot resolve module 'app/styles/app.css' in C:\xampp\htdocs\reactWeather\app
+ @ ./app/app.jsx 24:0-38
+
  
